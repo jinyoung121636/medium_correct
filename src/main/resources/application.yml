@@ -10,7 +10,7 @@ spring:
     virtual:
       enabled: true
   datasource:
-    url: jdbc:h2:./medium_dev;MODE=MYSQL
+    url: jdbc:h2:./medium_correct_dev;MODE=MYSQL
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -32,8 +32,8 @@ logging:
     org.springframework.transaction.interceptor: TRACE
 custom:
   site:
-    name: medium
+    name: medium_correct
     baseUrl: "http://localhost:${server.port}"
-  tempDirPath: c:/temp/medium_dev/temp
+  tempDirPath: ~/IdeaProjects/medium_correct/medium_correct_dev
   genFile:
-    dirPath: c:/temp/medium_dev
+    dirPath: ~/IdeaProjects/medium_correct/medium_correct_dev
