@@ -23,7 +23,7 @@ public class Member {
     @CreatedDate
     private LocalDateTime createDate;
     @LastModifiedDate
-    private LocalDateTime modifyDateDate;
+    private LocalDateTime modifyDate;
     private String username;
     private String password;
 
