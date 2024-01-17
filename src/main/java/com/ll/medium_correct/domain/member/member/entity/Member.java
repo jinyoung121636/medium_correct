@@ -15,14 +15,14 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 @NoArgsConstructor
 @Getter
 @Setter
-@EntityListeners(AuditingEntityListener.class) // 생성일자,수정일자 사용하기 위해서 쓰는것
+@EntityListeners(AuditingEntityListener.class)  // 1,2를 사용하기 위해서는 이게 있어야 한다.
 public class Member {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
-    @CreatedDate
+    @CreatedDate  // 1
     private LocalDateTime createDate;
-    @LastModifiedDate
+    @LastModifiedDate  // 2
     private LocalDateTime modifyDate;
     private String username;
     private String password;

@@ -39,4 +39,4 @@ out/
 ### CUSTOM ###
 application-secret.yml
 medium_correct_dev.mv.db
-medium_dev.trace.db
+medium_correct_dev.trace.db
